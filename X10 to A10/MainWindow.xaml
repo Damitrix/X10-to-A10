@@ -1,0 +1,32 @@
+﻿<Window x:Class="X10_to_A10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:X10_to_A10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Button Content="Change" Grid.Column="1" Height="30" Click="Button_Click" />
+            <TextBox x:Name="InputTextField" Height="30" />
+            <Button Content="Change" Grid.Column="1" Height="30" Grid.Row="1" Click="Button_Click_1" />
+            <TextBox x:Name="OutputTextField" Height="30" Grid.Row="1" />
+            <Label Content="Output Script (csv)" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" />
+            <Label Content="Input Script (tms)" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        </Grid>
+        <Button Content="Convert" Grid.Row="1" Width="150" Height="30" Click="Button_Click_2" />
+    </Grid>
+</Window>
