@@ -69,7 +69,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PatternDecoder.cs" />
+    <Compile Include="TimeDecoder.cs" />
     <Compile Include="PatternWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
